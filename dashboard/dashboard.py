@@ -6,7 +6,7 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 #data yang di import adalah day.csv karena sudah bisa mewakili daya yang di eksplorasi
-def read_data(file='day.csv'):
+def read_data(file='dashboard/day.csv'):
     try:
         data = pd.read_csv(file)
         data['dteday'] = pd.to_datetime(data['dteday'])
